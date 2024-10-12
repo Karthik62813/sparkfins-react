@@ -184,11 +184,11 @@ nav ul li p :hover{
 }
 
 .carousel-text1 {
-  background-image: url(https://img.freepik.com/free-photo/earth-hour-photo-composition_23-2149282778.jpg?t=st=1728717676~exp=1728721276~hmac=8842f9b623b42ebee74b38b896882ae8628bb772aec881a3b836703145b0a84c&w=826);
+  background-image: url(https://images.unsplash.com/photo-1651840198758-af6168d79111?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .carousel-text2 {
-  background-image: url(https://img.freepik.com/free-vector/worldwide-connection-blue-background-illustration-vector_53876-61764.jpg?t=st=1728717799~exp=1728721399~hmac=02ec57041d2d1f4662af43abd3cb5cbe502d474551db3822d23aae8f83ba231d&w=1380);
+  background-image: url(https://images.unsplash.com/photo-1651250211698-0a69ae8f4b38?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
 .carousel-text1 h1 {
@@ -768,7 +768,7 @@ textarea.input {
 
 .follow-icon {
   margin-top: 4%;
-  margin-right: 6%;
+  margin-right: 8%;
   height: 2.5vh;
 }
 
