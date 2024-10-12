@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/assessment-sparkfins/static/css/main.d1ea37e0.css",
+    "main.css": "/assessment-sparkfins/static/css/main.eee7e67f.css",
     "main.js": "/assessment-sparkfins/static/js/main.ef25b160.js",
     "static/js/453.09911229.chunk.js": "/assessment-sparkfins/static/js/453.09911229.chunk.js",
     "static/media/correct.png": "/assessment-sparkfins/static/media/correct.2e3836f589793371e54e.png",
@@ -8,12 +8,12 @@
     "static/media/cap.png": "/assessment-sparkfins/static/media/cap.d031c24558f9074049ca.png",
     "static/media/logo.svg": "/assessment-sparkfins/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/assessment-sparkfins/index.html",
-    "main.d1ea37e0.css.map": "/assessment-sparkfins/static/css/main.d1ea37e0.css.map",
+    "main.eee7e67f.css.map": "/assessment-sparkfins/static/css/main.eee7e67f.css.map",
     "main.ef25b160.js.map": "/assessment-sparkfins/static/js/main.ef25b160.js.map",
     "453.09911229.chunk.js.map": "/assessment-sparkfins/static/js/453.09911229.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1ea37e0.css",
+    "static/css/main.eee7e67f.css",
     "static/js/main.ef25b160.js"
   ]
 }
