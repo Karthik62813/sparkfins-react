@@ -3,6 +3,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import { HashLink as Link } from 'react-router-hash-link';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,8 @@ const HamburgerMenu = () => {
       <Container className='logo' maxWidth="xl">
          <h1>SparkFins</h1>
          <div className='phn-mail'>
-          <p><PhoneIcon className='header-icon'/> Phone: +91 90909090909 </p> {"     "   }  
-          <p><EmailIcon className='header-icon' /> Email: Loremipsum@gmail.com</p>
+         <p> <PhoneIcon className='header-icon'/>Phone: +91 90909090909 </p> {"     "   }  
+         <p> <EmailIcon className='header-icon' /> Email: Loremipsum@gmail.com</p>
          </div>
       </Container>
     <nav>
@@ -28,12 +29,12 @@ const HamburgerMenu = () => {
           zIndex: 999,
         }}
       >
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">ABOUT US</a></li>
-        <li><a href="#">ACHIEVEMENTS & REWARDS</a></li>
-        <li><a href="#">WHY CHOOSE US</a></li>
-        <li><a href="#">CONTACT US</a></li>
+        <li><p><Link to='#'>HOME</Link></p></li>
+        <li><p><Link to='#about'>ABOUT US</Link></p></li>
+        <li><p><Link to='#'>ACHIEVEMENTS & REWARDS</Link></p></li>
+        <li><p><Link to='#whyChooseUs'>WHY CHOOSE US</Link></p></li>
+        <li><p><Link to='#contact'>CONTACT US</Link></p></li>
+        <li><p><Link to='#services'>SERVICES</Link></p></li>
       </ul>
       <div onClick={toggleMenu}>
         <MenuIcon   className="menu-icon"/>

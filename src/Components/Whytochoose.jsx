@@ -7,7 +7,7 @@ import user from '../images/user.png';
 
 function Whytochoose(){
     return(
-        <div>
+        <div id="whyChooseUs">
             <div className="heading">
                     <label>Why To Choose?</label>
                     <b style={{color: "#2C2C6D"}}>___</b>

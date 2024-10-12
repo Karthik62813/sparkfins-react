@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 
 function Services(){
     return(
-        <div className="services">
+        <div className="services" id="services">
             <div className="heading">
                 <label>Our Services</label>
                 <b style={{color: "#2C2C6D"}}>___</b>

@@ -24,10 +24,17 @@ nav ul li{
 
 }
 
+
 nav ul li a{
+  padding: 4px 8px;
   text-decoration: none;
   color: #2C2C6D;
+  border-radius: 6px;
+}
 
+nav ul li p :hover{
+  color: #F8AE2D;
+  background-color: rgb(203, 203, 203);
 }
 
 
@@ -80,90 +87,189 @@ nav ul li a{
   }
 }
 
-.logo{
-  height: 70px;
+.logo {
+  height: auto;
   background-color: white;
   color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2%; /* Added padding for spacing on smaller screens */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-.logo h1{
-  font-size: xxx-large;
-  height: 60px;
-  width: 25%;
+.logo h1 {
+  font-size: 2.5rem;
   color: #2C2C6D;
   font-family: cursive;
-  margin: 2%;
+  flex: 1; /* Allow h1 to take available space */
 }
 
-.header-icon{
-  margin-right: 2%;
+.header-icon {
+  margin-right: 8px;
   color: #F8AE2D;
 }
 
-.phn-mail{
+.phn-mail {
   display: flex;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center;
   width: 35%;
+  flex-wrap: wrap; /* Ensure wrapping on smaller screens */
 }
 
-.phn-mail p{
-  margin-right: 3%;
-} 
+.phn-mail p {
+  margin-right: 10px;
+  margin-bottom: 0; /* Remove bottom margin for better alignment */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; /* Center-align for small screens */
+  }
+
+  .logo h1 {
+    font-size: 2rem;
+    margin-bottom: 10px; /* Spacing between logo and icons */
+  }
+
+  .phn-mail {
+    flex-direction: column; /* Stack the phone and email vertically */
+    align-items: center; /* Center items for small screens */
+    width: 100%;
+  }
+
+  .phn-mail p {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add space between items */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+
+  .phn-mail {
+    width: 100%;
+  }
+}
 
 
 /* CARSOUL */
 
-.carousel img{
+/* Base styles */
+.carousel img {
   width: 100%;
-  height: 60vh;
+  height: auto;
+  min-height: 30vh;
+  max-height: 60vh;
+  object-fit: cover;
 }
 
-.carousel-text1, .carousel-text2{
+.carousel-text1, .carousel-text2 {
   width: 100%;
-  height: 60vh;
-  background-image: url(https://img.freepik.com/free-photo/earth-hour-photo-composition_23-2149282778.jpg?t=st=1728717676~exp=1728721276~hmac=8842f9b623b42ebee74b38b896882ae8628bb772aec881a3b836703145b0a84c&w=826);
+  height: auto;
+  min-height: 60vh;
   background-size: cover;
+  background-position: center;
   position: relative;
-  top: 0;
-  left: 0;
   padding: 5%;
-  padding-left: 12%;
   color: white;
-  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.carousel-text1 h1{
-  font-size: xxx-large;
+.carousel-text1 {
+  background-image: url(https://img.freepik.com/free-photo/earth-hour-photo-composition_23-2149282778.jpg?t=st=1728717676~exp=1728721276~hmac=8842f9b623b42ebee74b38b896882ae8628bb772aec881a3b836703145b0a84c&w=826);
+}
+
+.carousel-text2 {
+  background-image: url(https://img.freepik.com/free-vector/worldwide-connection-blue-background-illustration-vector_53876-61764.jpg?t=st=1728717799~exp=1728721399~hmac=02ec57041d2d1f4662af43abd3cb5cbe502d474551db3822d23aae8f83ba231d&w=1380);
+}
+
+.carousel-text1 h1 {
+  font-size: 2.5rem;
   color: #fff;
   font-family: cursive;
-  margin: 2%;
+  margin: 2% 0;
 }
 
-.carousel-text1 p:nth-of-type(1){
-  width: 70%;
-  font-size: 60px;
+.carousel-text1 p:nth-of-type(1) {
+  width: 100%;
+  font-size: 2.5rem;
   font-weight: bolder;
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 3%;
 }
 
-.carousel-text1 p:nth-of-type(2){
-  width: 70%;
-  font-size: 40px;
-  line-height: 1;
+.carousel-text1 p:nth-of-type(2) {
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.3;
 }
 
-.carousel-text2{
-  background-image: url(https://img.freepik.com/free-vector/worldwide-connection-blue-background-illustration-vector_53876-61764.jpg?t=st=1728717799~exp=1728721399~hmac=02ec57041d2d1f4662af43abd3cb5cbe502d474551db3822d23aae8f83ba231d&w=1380);
-  background-position:center;
-}
-
-.carousel-text2 p{
-  width: 45%;
-  font-size: 30px;
+.carousel-text2 p {
+  width: 100%;
+  font-size: 1.5rem;
   font-weight: bolder;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .carousel-text1 h1 {
+    font-size: 2rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(1) {
+    font-size: 2rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(2),
+  .carousel-text2 p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-text1, .carousel-text2 {
+    padding: 5% 8%;
+  }
+  
+  .carousel-text1 h1 {
+    font-size: 1.8rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(1) {
+    font-size: 1.8rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(2),
+  .carousel-text2 p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-text1, .carousel-text2 {
+    padding: 5%;
+  }
+  
+  .carousel-text1 h1 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(1) {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-text1 p:nth-of-type(2),
+  .carousel-text2 p {
+    font-size: 0.9rem;
+  }
 }
 
 
@@ -171,9 +277,7 @@ nav ul li a{
 /* SERVICES */
 
 
-
-
-.heading{
+.heading {
   padding-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -184,28 +288,47 @@ nav ul li a{
   font-weight: 600;
 }
 
-.card{
-  width: 25%;
-  margin-bottom: 2%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-
-.card-body{
-  text-align: center;
-}
-
-.card-body div{
-  color: #2C2C6D;
-}
-
-.service-cards{
+.service-cards {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 3%;
 }
 
+.card {
+  width: calc(25% - 20px);
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body div {
+  color: #2C2C6D;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px);
+    margin-inline: 20px;
+  }
+  
+}
 
 
 
@@ -214,6 +337,7 @@ nav ul li a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -231,8 +355,8 @@ nav ul li a{
   text-align: center;
 }
 
-.marquee-content img{
-  height: 20vh;
+.marquee-general img{
+  height: 15vh;
   margin: 0 40px;
 }
 
@@ -241,91 +365,213 @@ nav ul li a{
   to { transform: translateX(-100%); }
 }
 
+.marquee-life img{
+  height: 15vh;
+  margin: 0 40px;
+}
+
+@keyframes slides {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0%); }
+}
+
 .marquee {
   overflow: hidden;
   box-sizing: border-box;
   white-space: nowrap;
 }
 
-.marquee-content {
+.marquee-general {
   display: inline-flex;
   animation:  10s slide infinite linear ; 
+}
+
+.marquee-life {
+  display: inline-flex;
+  animation:  10s slides infinite linear ; 
 }
 
 .general{
   width: 80%;
 }
 
+.life{
+  width: 80%;
+}
+
 /* WHYTOCHOOSE */
 
-.whyToChoose{
+.whyToChoose {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 3%;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+  margin: 2% auto;
 }
 
-.choose-card{
+.choose-card {
   align-items: center;
   width: 18%;
   line-height: 1;
+  padding: 1%; /* Added padding for better spacing on smaller screens */
+  text-align: center; /* Center the card content */
+  transition: transform 0.3s;
 }
 
-.choose-card img{
+.choose-card:hover{
+  transform: scale(1.05);
+}
+
+.choose-card img {
   height: 6vh;
   margin: 5% 0 25% 0;
 }
 
-.choose-card div{
+.choose-card div {
   margin-bottom: 10%;
 }
 
-.choose-card small{
+.choose-card small {
   margin-bottom: 20%;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .choose-card {
+    width: 22%; /* Slightly bigger cards for larger screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .choose-card {
+    width: 30%; /* Adjust card width for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .choose-card {
+    width: 45%; /* Cards take up more space on smaller screens */
+    margin-bottom: 5%; /* Adds spacing between rows of cards */
+  }
+
+  .choose-card img {
+    height: 8vh; /* Increase image size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .choose-card {
+    width: 90%; /* Full width for very small screens */
+  }
+
+  .choose-card img {
+    height: 10vh; /* Larger images on very small screens */
+    margin: 5% 0 15% 0;
+  }
+}
+
 
 
 /* CONTENT */
 
+/* General Styles */
 .content{
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
+  padding: 20px;
 }
- 
-button{
-  background-color: #2C2C6D;
-  padding: 0.5% 1.5%;
+
+.content button{
+  background-color: #1e1e5d;
+  padding: 10px 20px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 2%;
+  margin-bottom: 20px;
   border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #2C2C6D;
+}
+
+small {
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .content small {
+    width: 90%;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .content small {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .content small {
+    width: 60%;
+  }
+
+  button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
 }
 
 
 
 /* CONTACT */
 
-.contact{
+.contact {
   background-color: #F7F7F7;
   margin-bottom: 5%;
+  padding: 1.5rem;
 }
-.contact-cards{
+
+.contact-cards {
   display: flex;
   justify-content: center;
   gap: 3%;
+  flex-wrap: wrap; /* Ensures that the layout wraps on smaller screens */
 }
 
-.getInTouch, .contact-info{
+.getInTouch, .contact-info {
   width: 40%;
   text-align: left;
   background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 8px;
+  margin-bottom: 1.5rem; /* Ensures spacing between sections */
 }
 
-.contact-icon{
+.contact-icon {
   margin-right: 6%;
   color: #F8AE2D;
 }
@@ -391,7 +637,6 @@ textarea.input {
   transform: translateY(0);
 }
 
-
 .input-container span {
   position: absolute;
   top: 0;
@@ -438,8 +683,10 @@ textarea.input {
   opacity: 1;
 }
 
-
 @media (max-width: 850px) {
+  .getInTouch, .contact-info {
+    width: 90%; /* Adjust width for tablet screens */
+  }
 }
 
 @media (max-width: 480px) {
@@ -454,54 +701,72 @@ textarea.input {
   .btn {
     padding: 0.45rem 1.2rem;
   }
+
+  .getInTouch, .contact-info {
+    width: 100%; /* Full width for mobile devices */
+    margin: 0 0 2rem 0; /* Add margin between the cards on mobile */
+  }
+
+  .contact-cards {
+    flex-direction: column; /* Stacks the cards on smaller screens */
+  }
 }
 
+.getInTouch button{
+  background-color: #0D47A1;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
 
 
 /* FOOTER */
 
-.footer{
+.footer {
   background-color: #2C2C6D;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Ensures left alignment of the content */
   gap: 3%;
+  padding: 2% 5%; /* Add padding for consistent spacing */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
-.footer div{
+.footer div {
   width: 18%;
   margin-top: 2%;
 }
 
-.footer h1, h4{
-  padding-bottom: 4%;
+.footer-logo h1 {
+  font-size: xxx-large;
+  color: #2C2C6D;
+  font-family: cursive;
+  margin-bottom: 5%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  text-align: left; /* Align text to the left */
 }
 
-.footer-logo h1{
-    font-size: xxx-large;
-    color: #2C2C6D;
-    font-family: cursive;
-    margin-bottom: 5%;
-    background-color: white;
-    border-radius: 10px ;
-
-}
-
-.footer ul{
+.footer ul {
   list-style: none;
-  padding: 0%;
-  margin: 0%;
+  padding: 0;
+  margin: 0;
 }
 
-.footer ul li{
+.footer ul li {
   padding-bottom: 2%;
 }
 
-.footer-icon{
+.footer-icon {
   margin-right: 4%;
 }
 
-.follow-icon{
+.follow-icon {
   margin-top: 4%;
   margin-right: 6%;
   height: 2.5vh;
@@ -514,4 +779,83 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.copy-right p{
+  margin-top: 1%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .footer div {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    align-items: flex-start; /* Align content to the left */
+    padding-left: 5%; /* Ensure left padding for consistency */
+  }
+
+  .footer div {
+    width: 80%;
+    margin-bottom: 4%;
+  }
+
+  .footer-logo h1 {
+    font-size: xx-large;
+  }
+
+  .follow-icon {
+    height: 3vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer div {
+    width: 90%;
+  }
+
+  .footer-logo h1 {
+    font-size: x-large;
+  }
+
+  .footer ul li {
+    padding-bottom: 3%;
+  }
+
+  .footer ul {
+    padding-left: 0; /* Ensure left alignment */
+  }
+
+  .footer-icon {
+    margin-right: 2%;
+  }
+
+  .follow-icon {
+    height: 2vh;
+    margin-right: 4%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer div {
+    width: 100%;
+  }
+
+  .footer-logo h1 {
+    font-size: large;
+  }
+
+  .footer-logo p {
+    font-size: 0.9em;
+  }
+
+  .follow-icon {
+    margin-right: 2%;
+    height: 1.8vh;
+  }
 }

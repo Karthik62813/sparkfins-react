@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookSquare, faTwitter, faInstagram, faLinkedinIn, faGoogle, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import ContactPhoneIcon from '@mui/icons-material/ContactPhone';
 
 function Footer(){
     return(
@@ -47,7 +48,7 @@ function Footer(){
                 </div>
             </div>
             <div className='copy-right'>
-                <b>© 2024 Sparkfins. All Rights Reserved.</b>
+                <p>© 2024 Sparkfins. All Rights Reserved.</p>
             </div>
             <div style={{ height: "5vh", backgroundColor: "#2C2C6D"}}></div>
         </div>

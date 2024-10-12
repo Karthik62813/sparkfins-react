@@ -3,36 +3,16 @@ import Card from 'react-bootstrap/Card';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Contact(){
     return(
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className="heading">
                 <label>Contact Us</label>
                 <b style={{color: "#2C2C6D"}}>___</b>
             </div>
             <div className='contact-cards'>
-                {/* <Card className="getInTouch" >
-                <Card.Body style={{width: '85%'}}>
-                    <Card.Title>Get in Touch</Card.Title>
-                    <Card.Text>
-                        <select id="query" >
-                        <option value="" disabled selected>Inquiry Type</option>
-                            <option>Lorem, ipsum.</option>
-                            <option>Lorem, ipsum.</option>
-                            <option>Lorem, ipsum.</option>
-                            <option>Lorem, ipsum.</option>
-                            <option>Lorem, ipsum.</option>
-                            <option>Lorem, ipsum.</option>
-                        </select>
-                        <input type="text" placeholder='Name *' />
-                        <input type="emal" placeholder='Email *' />
-                        <input type="number" placeholder='Mobile *' />
-                        <input type="text" placeholder='Message *' />
-                        <button>SEND MESSAGE</button>
-                    </Card.Text>
-                </Card.Body>
-                </Card> */}
 
 
                 <div className="getInTouch" >
@@ -58,7 +38,7 @@ function Contact(){
                             <label for="">Message</label>
                             <span>Message</span>
                         </div>
-                        <button>Submit</button>
+                        <Link to='#contact'><button>Submit</button></Link>
                     </form>
                 </div>
 
