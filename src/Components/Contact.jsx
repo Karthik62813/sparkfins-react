@@ -1,5 +1,4 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
